@@ -385,6 +385,31 @@ header .header-tag__text {
   line-height: 34px;
 }
 
+header .header-stream {
+  position: absolute;
+  top: 300px;
+  right: 120px;
+}
+
+header .header-stream .stream__progress-bg {
+  position: absolute;
+  top: -160px;
+  left: -150px;
+}
+
+header .header-stream .stream__progress {
+  position: absolute;
+  top: -55px;
+  left: -108px;
+}
+
+header .header-stream .stream__text {
+  max-width: 133px;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 26px;
+}
+
 .info {
   padding: 130px 0 80px;
 }
