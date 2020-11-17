@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>«ТЕСТ НА УСТОЙЧИВОСТЬ»</title>
+    <link rel="stylesheet" href="./css/slick.css"/>
     <link rel="stylesheet" href="./css/style.min.css"/>
   </head>
   <body></body>
@@ -80,27 +81,109 @@
         </li>
       </ul>
     </div>
-  </section><form id="test-form">
-<div>
-<label>Field 1</label>
-<input type="text" name="form_field_1" placeholder="Field 1"/>
-</div>
-<div>
-<label>Field 2</label>
-<input type="text" name="form_field_2" placeholder="Field 2"/>
-</div>
-<div>
-<label>Field 3</label>
-<input type="text" name="form_field_3" placeholder="Field 3"/>
-</div>
-<div>
-<label>Field 4</label>
-<input type="text" name="form_field_4" placeholder="Field 4"/>
-</div>
-<div>
-<button type="submit"id="submit-form">Submit</button>
-</div>
-</form>
+  </section>
+  <section class="question">
+    <div class="wrapper">
+      <div class="qustion-wrapper__slider">
+        <div class="question-text">
+          <p class="question-text__subtitle">Опрос</p>
+          <h2 class="question-text__title">Устоять нельзя предпринимать</h2>
+        </div><form class="qustion-slider" data-spreadsheet-api="https://sheet2api.com/v1/BqTJhjxgTxel/%D0%A2%D0%B5%D1%81%D1%82%20%D0%BD%D0%B0%20%D1%83%D1%81%D1%82%D0%BE%D0%B9%D1%87%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%8C/%25D0%259B%25D0%25B8%25D1%2581%25D1%25821">
+        <div class="qustion-slider__item"><label for="Пол">1. Ваш Пол:</label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Пол" value="Мужчина" /> Мужчина</p>
+            <p><input type="radio" name="Пол" value="Женщина" /> Женщина</p>
+            <p><input type="radio" name="Пол" value="-" checked class="hidden" /></p>
+          </div>
+          <hr/><label>2. Ваш возраст:</label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Возраст" value="До 30 лет" /> До 30 лет</p>
+            <p><input type="radio" name="Возраст" value="31-45 лет" /> 31-45 лет</p>
+            <p><input type="radio" name="Возраст" value="46-65 лет" /> 46-65 лет</p>
+            <p><input type="radio" name="Возраст" value="66 лет и старше" /> 66 лет и старше</p>
+            <p><input type="radio" name="Возраст" value="-" checked class="hidden" /></p>
+          </div>
+        </div>
+        <div class="qustion-slider__item"><label>3. Вы хотите начать свой бизнес?:</label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Вы хотите начать свой бизнес?" value="Да" class="open-answer" /> Да</p>
+            <p><input type="radio" name="Вы хотите начать свой бизнес?" value="Нет" class="close-answer" /> Нет</p>
+            <p><input type="radio" name="Вы хотите начать свой бизнес?" value="У меня есть свой бизнес" class="close-answer" /> У меня есть свой бизнес</p>
+            <p><input type="radio" name="Вы хотите начать свой бизнес?" value="-" checked class="hidden" /></p>
+          </div>
+          <hr/><label class="more-answer">3.1 Как скоро?: </label>
+          <div class="qustion-slider__answer more-answer">
+            <p><input type="radio" name="Как скоро?" value="В этом году" /> В этом году</p>
+            <p><input type="radio" name="Как скоро?" value="В ближайшие 2-3 года" /> В ближайшие 2-3 года</p>
+            <p><input type="radio" name="Как скоро?" value="В течение 5-10 лет" /> В течение 5-10 лет</p>
+            <p><input type="radio" name="Как скоро?" value="Когда будут более благоприятные условия" /> Когда будут более благоприятные условия</p>
+            <p><input type="radio" name="Как скоро?" value="-" checked class="hidden" /></p>
+          </div>
+        </div>
+        <div class="qustion-slider__item"><label>4. Во время пандемии свой бизнес – лучший способ заработать?: </label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Во время пандемии свой бизнес – лучший способ заработать?" value="Да" /> Да</p>
+            <p><input type="radio" name="Во время пандемии свой бизнес – лучший способ заработать?" value="Нет" /> Нет</p>
+            <p><input type="radio" name="Во время пандемии свой бизнес – лучший способ заработать?" value="-" checked class="hidden" /></p>
+          </div>
+          <hr/><label>5. Свой бизнес оставляет больше свободного времени?: </label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Свой бизнес оставляет больше свободного времени?" value="Да" /> Да</p>
+            <p><input type="radio" name="Свой бизнес оставляет больше свободного времени?" value="Нет" /> Нет</p>
+            <p><input type="radio" name="Свой бизнес оставляет больше свободного времени?" value="-" checked class="hidden" /></p>
+          </div>
+        </div>
+        <div class="qustion-slider__item"><label>6. Свой бизнес – это слишком большая ответственность?: </label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Свой бизнес – это слишком большая ответственность?" value="Да" /> Да</p>
+            <p><input type="radio" name="Свой бизнес – это слишком большая ответственность?" value="Нет" /> Нет</p>
+            <p><input type="radio" name="Свой бизнес – это слишком большая ответственность?" value="-" checked class="hidden" /></p>
+          </div>
+          <hr/><label>7. Работа по найму предлагает больше перспектив и заработка:</label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Работа по найму предлагает больше перспектив и заработка" value="Да" /> Да</p>
+            <p><input type="radio" name="Работа по найму предлагает больше перспектив и заработка" value="Нет" /> Нет</p>
+            <p><input type="radio" name="Работа по найму предлагает больше перспектив и заработка" value="-" checked class="hidden" /></p>
+          </div>
+        </div>
+        <div class="qustion-slider__item"><label>8. Предприниматели в среднем больше зарабатывают: </label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Предприниматели в среднем больше зарабатывают" value="Да" /> Да</p>
+            <p><input type="radio" name="Предприниматели в среднем больше зарабатывают" value="Нет" /> Нет</p>
+            <p><input type="radio" name="Предприниматели в среднем больше зарабатывают" value="-" checked class="hidden" /></p>
+          </div>
+          <hr/><label>9. Проекты в социальной сфере ближе женщинам, чем мужчинам?: </label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Проекты в социальной сфере ближе женщинам, чем мужчинам?" value="Да" /> Да</p>
+            <p><input type="radio" name="Проекты в социальной сфере ближе женщинам, чем мужчинам?" value="Нет" /> Нет</p>
+            <p><input type="radio" name="Проекты в социальной сфере ближе женщинам, чем мужчинам?" value="-" checked class="hidden" /></p>
+          </div>
+        </div>
+        <div class="qustion-slider__item"><label>10. Я мечтаю заниматься любимым делом и получать за это хорошие деньги. Я могу это делать: </label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Я мечтаю заниматься любимым делом и получать за это хорошие деньги. Я могу это делать" value="работая по найму в офисе компании" /> работая по найму в офисе компании</p>
+            <p><input type="radio" name="Я мечтаю заниматься любимым делом и получать за это хорошие деньги. Я могу это делать" value="работая по найму на удаленном доступе" /> работая по найму на удаленном доступе</p>
+            <p><input type="radio" name="Я мечтаю заниматься любимым делом и получать за это хорошие деньги. Я могу это делать" value="занимаясь своим бизнесом" /> занимаясь своим бизнесом</p>
+            <p><input type="radio" name="Я мечтаю заниматься любимым делом и получать за это хорошие деньги. Я могу это делать" value="-" checked  class="hidden" /></p>
+          </div>
+          <hr/><label>11. Когда закончится пандемия, я хотел/ла бы открыть собственный бизнес: </label>
+          <div class="qustion-slider__answer">
+            <p><input type="radio" name="Когда закончится пандемия, я хотел/ла бы открыть собственный бизнес" value="Да" /> Да</p>
+            <p><input type="radio" name="Когда закончится пандемия, я хотел/ла бы открыть собственный бизнес" value="Нет" /> Нет</p>
+            <p><input type="radio" name="Когда закончится пандемия, я хотел/ла бы открыть собственный бизнес" value="-" checked class="hidden" /></p>
+          </div><button type="submit" class="form-btn">Отправить</button>
+        </div></form>
+        <div class="qustetion-slider__navigation">
+          <div class="navigation"></div>
+          <p class="nav-text">Осталось 6 вопросов из 6</p>
+        </div>
+      </div>
+      <div class="question-wrapper__desc">
+        <p class="question-wrapper__text">Результаты опроса вы узнаете в специальном материале о предпринимателях</p>
+        <p class="question-wrapper__number">1 /5</p>
+      </div>
+    </div>
+  </section>
   <section class="stream">
     <div class="wrapper">
       <h2 class="stream__title">Трансляция дискуссии</h2>
@@ -319,6 +402,11 @@
       </ul>
     </div>
   </footer>
+  <div class="coockie">
+    <p class="coockie__text">Файлы cookie используются на нашем веб-сайте и в мобильном приложении. Для получения дополнительной информации о файлах cookie, пожалуйста, просмотрите ознакомительный текст о файлах cookie. Если вы даете свое согласие на использование файлов cookie при использовании нашего веб-сайта и мобильного приложения нажмите на кнопку</p>
+    <button class="coockie__btn">Я согласен</button><img class="coockie__image" src="./img/ico_close.png" alt="close"/>
+  </div>
   <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/slick.min.js"></script><script src="https://sheet2api.com/v1/template.js"></script>
   <script src="./js/script.js"></script>
 </html>
